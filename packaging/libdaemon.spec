@@ -5,7 +5,7 @@ License:        LGPL-2.1+
 Summary:        Lightweight C library That Eases the Writing of UNIX Daemons
 Url:            http://0pointer.de/lennart/projects/libdaemon/
 Group:          System/Libraries
-Source:         %{name}-%{version}.tar.bz2
+Source:         %{name}-%{version}.tar.gz
 BuildRequires:  doxygen
 BuildRequires:  pkg-config
 
