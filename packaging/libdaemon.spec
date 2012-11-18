@@ -39,9 +39,9 @@ make %{?_smp_mflags}
 # We don't care about the HTML README
 rm %{buildroot}%{_datadir}/doc/libdaemon/{README.html,style.css}
 
-%post -n libdaemon0 -p /sbin/ldconfig
+%post  -p /sbin/ldconfig
 
-%postun -n libdaemon0 -p /sbin/ldconfig
+%postun  -p /sbin/ldconfig
 
 %files -n libdaemon
 %defattr (-,root,root)
