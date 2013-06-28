@@ -6,6 +6,7 @@ Summary:        Lightweight C library That Eases the Writing of UNIX Daemons
 Url:            http://0pointer.de/lennart/projects/libdaemon/
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.gz
+Source1001: 	libdaemon.manifest
 BuildRequires:  doxygen
 BuildRequires:  pkg-config
 
@@ -27,6 +28,7 @@ daemons.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure \
@@ -44,11 +46,13 @@ rm %{buildroot}%{_datadir}/doc/libdaemon/{README.html,style.css}
 %postun  -p /sbin/ldconfig
 
 %files -n libdaemon
+%manifest %{name}.manifest
 %defattr (-,root,root)
 %doc LICENSE 
 %{_libdir}/libdaemon.so.0*
 
 %files devel
+%manifest %{name}.manifest
 %defattr (-,root,root)
 %{_libdir}/libdaemon.so
 %{_libdir}/pkgconfig/libdaemon.pc
