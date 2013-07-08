@@ -1,0 +1,8 @@
+Change-Id: I7bc845d5036f91acbf65ce5c1f57974295cf22b4
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:39:53 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4847
+Project: platform/upstream/libdaemon
+Branch: refs/heads/tizen
